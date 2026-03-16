@@ -1,2 +1,13 @@
 # seoul-world-model
-Seoul World Model: Grounding World Simulation Models in a Real-World Metropolis
+
+This is the official repository for the paper **"Grounding World Simulation Models in a Real-World Metropolis"**.
+
+## Release Plan
+
+We are currently undergoing internal review and code cleanup, and plan to release the following soon:
+
+- Synthetic training data
+- Street-view interpolation model code and checkpoints for training videos
+- Model inference code and checkpoints
+
+Stay tuned for updates!
