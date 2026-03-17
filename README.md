@@ -8,8 +8,9 @@ This is the official repository for the paper **"Grounding World Simulation Mode
 
 We are currently undergoing internal review and code cleanup, and plan to release the following soon:
 
+- Model checkpoints and inference code 
 - Synthetic training data
 - Street-view interpolation model code and checkpoints for training videos
-- Model inference code and checkpoints
+
 
 Stay tuned for updates!
