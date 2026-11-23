@@ -1,0 +1,7 @@
+{
+  "description": "Vehicles ahead on fire; drive straight then turn left.",
+  "trajectory": "straight_left90",
+  "start_frame": 0,
+  "seed": 42,
+  "prompt": "A driving video captured from the front-facing camera of a vehicle navigating through Seoul, South Korea. The video shows urban streets with Korean signage and buildings as several vehicles ahead are actively on fire, with bright orange flames and thick dark smoke rising into the air. Traffic moves cautiously around the burning cars. The camera perspective is from the driver's viewpoint, driving through the ongoing vehicle fire incident."
+}

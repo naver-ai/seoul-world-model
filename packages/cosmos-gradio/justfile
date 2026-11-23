@@ -1,0 +1,37 @@
+default:
+  just --list
+
+# Format code with black
+format:
+  python -m black .
+
+# Sort imports with isort
+sort-imports:
+  python -m isort .
+
+# Run all formatting
+fmt: sort-imports format
+
+# Check formatting without making changes
+check-format:
+  python -m black --check --diff .
+  python -m isort --check-only --diff .
+
+# Lint with flake8 (if available)
+lint:
+  python -m flake8 . || echo "flake8 not installed, skipping"
+
+# Type check with mypy (if available)
+typecheck:
+  python -m mypy . || echo "mypy not installed, skipping"
+
+# Run all checks
+check: check-format lint typecheck
+
+# Install formatting dependencies
+install-dev:
+  python -m pip install black isort flake8 flake8-pyproject mypy --break-system-packages
+
+# Release a new version
+release pypi_token *args:
+  ./bin/release.sh {{pypi_token}} {{args}}

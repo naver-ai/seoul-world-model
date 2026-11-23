@@ -1,0 +1,96 @@
+Seoul World Model
+Copyright (c) 2026-present NAVER Corp.
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+this project except in compliance with the License. A copy of the License is
+provided at LICENSE and at https://www.apache.org/licenses/LICENSE-2.0.
+
+This project contains subcomponents with separate copyright notices and
+license terms. Those subcomponents remain subject to their original licenses.
+
+===============================================================================
+
+NVIDIA Cosmos-Predict2.5
+https://github.com/nvidia-cosmos/cosmos-predict2.5
+Upstream baseline: fd18be86376a395fbdc7bf78a8c237937d6d95ff
+
+Copyright (c) 2025 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+Licensed under the Apache License, Version 2.0. See LICENSE.
+
+Files derived from or modifying Cosmos-Predict2.5 retain their original NVIDIA
+copyright and Apache-2.0 notices. Modified files identify that they were changed
+by NAVER Corp.
+
+===============================================================================
+
+GEN3C
+https://github.com/nv-tlabs/GEN3C
+
+Copyright (c) 2025 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+The GEN3C-derived files under
+cosmos_predict2/_src/predict2/models/gen3c_warping/ and the GEN3C-derived
+cosmos_predict2/_src/predict2/datasets/local_datasets/warp/projection.py and
+cosmos_predict2/_src/predict2/datasets/local_datasets/warp/splatting.py are
+licensed under the Apache License, Version 2.0. See LICENSE.
+
+===============================================================================
+
+Seoul World Model checkpoint (CC BY-NC 4.0)
+
+Copyright (c) 2026-present NAVER Corp.
+
+The Seoul World Model checkpoint (model weights) is licensed under the Creative
+Commons Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0).
+Commercial use of the checkpoint is not permitted under this license. A copy
+is provided at LICENSES/CC-BY-NC-4.0.txt and at
+https://creativecommons.org/licenses/by-nc/4.0/
+
+This license applies to the model weights only. The source code in this
+repository is licensed under Apache-2.0 as stated above. Because the checkpoint
+is a Derivative Model of NVIDIA Cosmos-Predict2.5, its use must also comply
+with the NVIDIA Open Model License (next section).
+
+===============================================================================
+
+NVIDIA Cosmos model weights (NVIDIA Open Model License)
+
+Built on NVIDIA Cosmos.
+
+The Seoul World Model checkpoint is a Derivative Model of NVIDIA
+Cosmos-Predict2.5 (https://huggingface.co/nvidia/Cosmos-Predict2.5-2B), and
+inference uses NVIDIA Cosmos-Reason1-7B
+(https://huggingface.co/nvidia/Cosmos-Reason1-7B) as the text encoder. These
+models are:
+
+    Licensed by NVIDIA Corporation under the NVIDIA Open Model License
+
+A copy of the NVIDIA Open Model License Agreement is provided at
+LICENSES/NVIDIA-Open-Model-License.txt and at
+https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/
+
+===============================================================================
+
+Depth-Anything-3 (CC BY-NC 4.0)
+https://github.com/ByteDance-Seed/Depth-Anything-3
+
+Depth-Anything-3 by ByteDance Seed was used to estimate the depth and camera
+poses of the Seoul World Model training data (DA3NESTED-GIANT-LARGE) and the
+depth and camera poses released with the street-view data of this project
+(DA3NESTED-GIANT-LARGE-1.1). These model weights are licensed under the
+Creative Commons Attribution-NonCommercial 4.0 International license
+(CC BY-NC 4.0); a copy is provided at LICENSES/CC-BY-NC-4.0.txt and at
+https://creativecommons.org/licenses/by-nc/4.0/
+
+The released depth and camera poses are provided under the same non-commercial terms.
+No Depth-Anything-3 code or weights are included in this repository; Step 4 of
+README.md downloads the weights from
+https://huggingface.co/depth-anything/DA3NESTED-GIANT-LARGE-1.1
+
+===============================================================================
+
+CARLA Simulator / CARLA-specific assets (c) CARLA Team.
+Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+Source: https://carla.org/.
+Used to generate synthetic training video; no CARLA-generated media or assets are redistributed.
