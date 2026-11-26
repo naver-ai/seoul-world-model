@@ -17,7 +17,7 @@
 #
 # Inputs (env vars):
 #   DATA_DIR     folder with images/ depth/ intrinsics/ extrinsics/   (required)
-#   TRAJECTORY   straight_left90 | straight_right90 | left90_right90 |
+#   TRAJECTORY   straight | straight_left90 | straight_right90 | left90_right90 |
 #                right90_left90 | smooth_left | smooth_right           (default: smooth_left)
 #   START_FRAME  index of the forward-facing frame to start from      (default: 0)
 #   PROMPT       literal text prompt (wins if set)
@@ -85,7 +85,7 @@ if [ "${TEASER:-0}" = 1 ]; then
   [ -n "$PROMPT" ] && export PROMPT
   launch predict2_teaser "$out"
 elif [ -n "$ALL" ]; then
-  for t in straight_left90 straight_right90 left90_right90 right90_left90 smooth_left smooth_right; do run_one "$t"; done
+  for t in straight straight_left90 straight_right90 left90_right90 right90_left90 smooth_left smooth_right; do run_one "$t"; done
 else
   run_one "${TRAJECTORY:-smooth_left}"
 fi

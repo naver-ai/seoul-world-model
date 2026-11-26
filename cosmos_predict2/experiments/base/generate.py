@@ -9,7 +9,7 @@ and GPU forward-warping. Configure it with environment variables so a one-line
 script can drive it:
 
     DATA_DIR      folder of posed frames (images/ depth/ intrinsics/ extrinsics/)
-    TRAJECTORY    straight_left90 | straight_right90 | left90_right90 |
+    TRAJECTORY    straight | straight_left90 | straight_right90 | left90_right90 |
                   right90_left90 | smooth_left | smooth_right
     START_FRAME   index of the forward-facing frame to start from
     PROMPT        literal text prompt (wins if set)
