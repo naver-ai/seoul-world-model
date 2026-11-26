@@ -37,7 +37,7 @@ from cosmos_predict2._src.predict2.datasets.local_datasets.dataloader.utils impo
     make_relative_extrinsics,
 )
 
-# Trajectory presets, mirroring the OOD reference set (minus plain `straight`).
+# Trajectory presets, mirroring the OOD reference set.
 # left = turn left, right = turn right; `*90` ramps a discrete turn, `smooth_*`
 # turns continuously across the whole clip. Turn magnitude is `turn_deg`.
 TRAJECTORIES = (

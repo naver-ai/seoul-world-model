@@ -54,7 +54,7 @@ set of images.
 
 `TRAJECTORY` selects the camera path, built in metric space from the start frame's
 pose (forward = camera +Z, turns rotate about world-up). The set mirrors the OOD
-reference trajectories (minus plain straight):
+reference trajectories:
 
 | Trajectory         | Motion |
 |--------------------|--------|
