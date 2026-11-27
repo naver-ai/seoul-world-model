@@ -1236,6 +1236,9 @@ def main():
             logging.info(f"[GPU {rank}] Done: {done}, Failed: {failed}")
             logging.info(f"Output: {root_output}")
             logging.info(f"{'='*60}")
+            # Exit non-zero so callers (generate.sh, batch jobs) see that a trajectory failed.
+            if failed:
+                raise SystemExit(f"[GPU {rank}] {failed} trajectory(ies) failed; see the log above.")
 
     elif args.n_samples is not None and args.n_samples != 0:
         # Multi-sample mode: distribute samples across GPUs, model loaded once
@@ -1357,6 +1360,10 @@ def main():
         logging.info(f"[GPU {rank}] Done: {done}, Failed: {failed}, Skipped: {skipped}")
         logging.info(f"Output: {root_output}")
         logging.info(f"{'='*60}")
+        # Exit non-zero so callers (generate.sh, batch jobs) see that a sample failed,
+        # e.g. a video the guardrail blocked, instead of reporting success with no output.
+        if failed:
+            raise SystemExit(f"[GPU {rank}] {failed} sample(s) failed; see the log above.")
     else:
         # Single-sample mode (backward compatible)
         dataset = dataloader_val.dataset
